@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,7 +18,7 @@ namespace WordSearch
 
     public partial class Form1 : Form
     {
-        string version = "v1.1";
+        string version = "v1.2";
         static Random r;
         List<Answer> objAnswers = new List<Answer>();
         int Across = 0;
@@ -92,7 +93,15 @@ namespace WordSearch
                 if (Words[i].Replace(" ", "") != Words[i])
                 {
                     MessageBox.Show("Words cannot have embedded spaces");
+                    return;
                 }
+
+                if (!Regex.IsMatch(Words[i], @"^[A-Z]+$"))
+                {
+                    MessageBox.Show("Words must only be made up of letters A-Z");
+                    return;
+                }
+
             }
 
             // Now attempt to fit the words

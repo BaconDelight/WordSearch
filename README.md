@@ -3,16 +3,20 @@ WordSearch Puzzle Maker
 
 Makes Word Search rectangles of any words you specify.
 
-Input words can be by using the text box in the form or they can be specified in a file WordSearch.txt.
+Can specify title of puzzle and size of square. If title is not specified it defaults to "WordSearch Puzzle".
+
+Input words can be by using the text box in the form or you can Brose to a text file that contains a simple list of words, one per line.
+
+Words cannot contain spaces and can only be made of the letters A-Z. Lowercase will be converted to upper case.
 
 Output will be two pairs of files
 
 The puzzle will be in
-  "WordSearch Puzzle.txt" and
-  "WordSearch Puzzle.html"
+  "&lt;title&gt;.txt" and
+  "&lt;title&gt;.html"
 
 The answers will be in
-  "Answers.txt" and
-  "Answers.html"
+  "&lt;title&gt Answers.txt" and
+  "&lt;title&gt Answers.html"
 
 The .html versions can be loaded into Word for further formatting if desired.
