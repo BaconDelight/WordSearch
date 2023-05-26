@@ -7,7 +7,7 @@ Can specify title of puzzle and size of square. If title is not specified it def
 
 Input words can be by using the text box in the form or you can Browse to a text file that contains a simple list of words, one per line.
 
-Words cannot contain spaces and can only be made of the letters A-Z. Lowercase will be converted to upper case.
+Words cannot contain spaces and can only be made of the letters A-Z. Lower case will be converted to upper case.
 
 Output will be two pairs of files
 
